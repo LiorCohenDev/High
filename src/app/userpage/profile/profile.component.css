@@ -1,0 +1,9 @@
+:host {
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+}
+.profile {
+  border: 1px solid gray;
+  padding: 10px;
+}
