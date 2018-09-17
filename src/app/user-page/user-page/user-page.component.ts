@@ -1,6 +1,6 @@
 import { Component, EventEmitter } from "@angular/core";
 import { UsersSerive } from "../users.service";
-import { User } from "../userList/user.model";
+import { User } from "../user-list/user.model";
 
 @Component({
   selector: "app-user-page",

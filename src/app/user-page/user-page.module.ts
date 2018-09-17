@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { UserPageComponent } from "./user-page/user-page.component";
-import { UserListComponent } from "./userList/user-list.component";
-import { UserItemComponent } from "./userList/user/user-Item.component";
+import { UserListComponent } from "./user-list/user-list.component";
+import { UserItemComponent } from "./user-list/user/user-Item.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { CommonModule } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
