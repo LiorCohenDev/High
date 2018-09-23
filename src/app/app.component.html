@@ -1,13 +1,13 @@
 <div>
-  <h1>High</h1>
-  <h2>Map</h2>
-  <h2>Slide</h2>
-  <h2>Reports</h2>
-  <h2>Settings</h2>
-  <h2>User list</h2>
-  <app-user-page></app-user-page>
+  <nav class="navbar">
+    <a routerLink="/user" routerLinkActive="active">User</a>
+    <span> | </span>
+    <a routerLink="/media" routerLinkActive="active">Media</a>
+  </nav>
 
-
-  <app-media-page></app-media-page>
+  <!-- <app-user-page></app-user-page>
+  <app-media-page></app-media-page> -->
 
 </div>
+
+<router-outlet></router-outlet>
