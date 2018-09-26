@@ -1,9 +1,7 @@
-<div class="flex-container">
-  <ul>
-    <li *ngFor="let item of media">
-      <div class="flex-item">
-        <app-media-item [item]="item"> </app-media-item>
-      </div>
-    </li>
-  </ul>
-</div>
+<ul class="flex-container">
+  <li *ngFor="let item of media">
+    <div class="flex-item">
+      <app-media-item [item]="item"> </app-media-item>
+    </div>
+  </li>
+</ul>
