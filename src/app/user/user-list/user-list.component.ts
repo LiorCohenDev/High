@@ -13,11 +13,20 @@ export class UserListComponent {
   @Output()
   onUserSelected: EventEmitter<User>;
 
+  private selectedUser: User;
+
   constructor() {
     this.onUserSelected = new EventEmitter();
   }
 
   clicked(user: User): void {
+    this.selectedUser = user;
     this.onUserSelected.emit(user);
+  }
+
+  isSelected(user: User): boolean {
+    if (!user || !this.selectedUser) return false;
+
+    return user === this.selectedUser;
   }
 }

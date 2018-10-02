@@ -1,7 +1,7 @@
 <div>
   <h1>User list</h1>
   <ul>
-    <li *ngFor="let user of users" (click)='clicked(user)'>
+    <li *ngFor="let user of users" (click)='clicked(user)' [class.selected]="isSelected(user)">
       <app-user [user]="user"></app-user>
     </li>
   </ul>

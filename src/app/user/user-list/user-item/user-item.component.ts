@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, HostBinding } from "@angular/core";
 import { User } from "../user.model";
 
 @Component({
@@ -10,6 +10,11 @@ export class UserItemComponent {
   @Input()
   user: User;
 
+  @Input()
+  user1: User;
+
+  @HostBinding("attr.class")
+  cssClass = "item";
   // openProfile() {
   //   console.log("open profile");
   // }
