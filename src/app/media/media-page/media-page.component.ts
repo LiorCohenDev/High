@@ -10,11 +10,11 @@ import { MediaService } from "../media.service";
 export class MediaPageComponent implements OnInit {
   media: Media[];
 
-  constructor(private mediaSerive: MediaService) {
+  constructor(private mediaSerive: MediaService) {}
+
+  ngOnInit() {
     this.mediaSerive.getMediaList().subscribe(media => {
       this.media = media;
     });
   }
-
-  ngOnInit() {}
 }

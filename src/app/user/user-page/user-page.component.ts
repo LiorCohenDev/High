@@ -11,7 +11,9 @@ export class UserPageComponent {
   users: User[];
   selectedUser: User;
 
-  constructor(private usersSerive: UsersSerive) {
+  constructor(private usersSerive: UsersSerive) {}
+
+  ngOnInit() {
     this.usersSerive.getUserList().subscribe(users => {
       this.users = users;
     });

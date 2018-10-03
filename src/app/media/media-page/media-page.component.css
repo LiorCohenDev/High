@@ -1,13 +1,9 @@
-/* * {
-  box-sizing: border-box;
-} */
-
-.leftSide {
+/* .leftSide {
   flex: 30%;
   padding: 20px;
-}
+} */
 
-.mainView {
+.main-view {
   flex: 60%;
   background-color: white;
   padding: 20px;
